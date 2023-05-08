@@ -189,13 +189,17 @@ background-color: #242629;
 height: 6rem;
 width: 10rem;
 border-radius: .5rem;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .form_signup .profile-input-form img  {
   height: 8vh;
   background-color: #363636;
   border-radius: 50%;
- 
+
+
 }
 
 #file {
