@@ -176,45 +176,7 @@ body {
   color: #f1f1f1;
 }
 
-.form_signup .profile-input-form  {
-  display: flex;
-background-color: #363636;
-  
-  /* Parei aqui, input file precisa ser feito. */
-}
 
-.form_signup .profile-input-form .wrapper-profile {
-margin-left: 2rem;
-background-color: #242629;
-height: 6rem;
-width: 10rem;
-border-radius: .5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.form_signup .profile-input-form img  {
-  height: 8vh;
-  background-color: #363636;
-  border-radius: 50%;
-
-
-}
-
-#file {
-  display: none;
-}
-
-#uploadPicBtn {
-background-color:transparent;
-border: solid 1px #ffd86d;
-padding: .4rem;
-width: 100%;
-font-size: .7rem;
-border-radius: 1rem;
-color: #ffd86d;
-}
 
 .form_signup button {
   justify-content: center;
