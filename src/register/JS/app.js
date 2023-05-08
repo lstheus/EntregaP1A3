@@ -8,25 +8,17 @@ const uploadPicBtn = document.querySelector('#uploadPicBtn');
 
 
 
-//  console.log(profileWrapper);
-//  console.log(img);
-//  console.log(file);
-// console.log(uploadPicBtn);
-
-
-
-
 // Função:
-file.addEventListener('change', () => {
-const choosedFile = this.files[0];
+file.addEventListener('change', function () {
+  const choosedFile = this.files[0];
 
   if (choosedFile) {
     const reader = new FileReader();
-  
-    reader.addEventListener('load', () => {
+
+    reader.addEventListener('load', function () {
       img.setAttribute('src', reader.result);
     });
-  
+
     reader.readAsDataURL(choosedFile);
 
   }
