@@ -52,14 +52,14 @@ img{
 .divisaoA{
     margin-top: 10%;
     width: 90%;
-    background-color:  #f1f1f1;
+    background-color:  #242629;
     height: 2px;
     margin-left: auto;
     margin-right: auto; 
     
 }
 .ContainerDireito{
-    background-color:#363636;
+    background-color:#242629;
     display: flex;
     width: 50%;
     height: 100vh;
@@ -108,7 +108,7 @@ button a{
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto; 
-    color:  #f1f1f1;
+    color:  #242629;
     
     
 }
@@ -129,5 +129,5 @@ span{
     margin-right: auto; 
     text-align: center;
     font-size: 25px;
-    
+    color: #f1f1f1;
 }

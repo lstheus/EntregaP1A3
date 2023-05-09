@@ -64,7 +64,7 @@ img{
     
 }
 .ContainerDireito{
-    background-color:#363636;
+    background-color:#242629;
     display: flex;
     width: 35%;
     height: 90vh;
@@ -116,7 +116,7 @@ button a{
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto; 
-    color:  #363636;
+    color:  #242629;
     
     
 }
@@ -130,6 +130,7 @@ button{
     background-color: #ffd86d;
     border-radius: 10px;
     border-color: transparent;
+
 }
 span{
     margin-bottom: 2%;
