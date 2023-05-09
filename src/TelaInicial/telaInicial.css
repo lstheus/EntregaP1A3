@@ -1,133 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    image-rendering: "https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg";
-    display: flex;
-  
+body {
+  width: 100%;
+  height: 100vh;
+  image-rendering: "https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg";
+  display: flex;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.ContainerEsquerdo{
-    
-    background-color: #ffd86d;
-    width: 50%;
-    margin-top: none;
-    
-  
-;
-   
-  
+.ContainerEsquerdo {
+  background: rgb(36, 38, 41);
+  width: 35%;
+  margin-top: none;
+}
+img {
+  align-items: center;
+  display: grid;
+  width: auto;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
+.ilustracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-img{
-    align-items: center;
-    display: grid;
-    width: auto;
-    height: 30vh;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 10%;
-}
-.ilustracao img{
-    margin-top: 5%;
-    width: 120px;
-    height: auto;
-    color: #f1f1f1;
+.ilustracao span {
+  margin-top: 15%;
 
-}
-.mensagem{
-    margin-top: 2%;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto; 
+  color: #f1f1f1;
 
-    text-align: center;
+  font-size: 10rem;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 200, "opsz" 48;
 }
-.divisaoA{
-    margin-top: 10%;
-    width: 90%;
-    background-color:  #242629;
-    height: 2px;
-    margin-left: auto;
-    margin-right: auto; 
-    
+.mensagem {
+  margin-top: 5%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffd86d;
+  text-align: center;
+  font-size: 1.3rem;
 }
-.ContainerDireito{
-    background-color:#242629;
-    display: flex;
-    width: 50%;
-    height: 100vh;
-    flex-direction: column;
-    
-  
+.divisao {
+  margin-top: 5%;
+  width: 85%;
 
+  border: 1px solid #f1f1f1;
+  opacity: 0.1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ContainerDireito {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(153, 126, 51, 0.75),
+      rgba(36, 38, 41) 90%
+    ),
+    url("../public/images/series-624x454.jpg");
 
+  display: flex;
+  width: 65%;
+  height: 100vh;
+  flex-direction: column;
 }
-.divisaoB{
-    margin-top: 40%;
-    width: 90%;
-    background-color:  #ffd86d;
-    height: 2px;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 10%;
-    
-}
-.btnEntrar{
-    width: 150px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 2%;
- 
 
+.wrapper-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 6vh;
 }
- 
-.btnCadastrar{
-    width: 220px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 5%;
- 
 
+.wrapper-buttons span {
+  font-size: 2.5rem;
+  color: #ffd86d;
+  font-weight: 700;
 }
- 
-   
 
-button a{
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto; 
-    color:  #242629;
-    
-    
+button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 2.5rem;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f1f1f1;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 1rem;
+  border-color: transparent;
 }
-button{
-    margin-left: auto;
-    margin-right: auto; 
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd86d;
-    border-radius: 10px;
-    border-color: transparent;
+
+button:hover {
+  transition: all 0.3s;
 }
-span{
-    margin-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto; 
-    text-align: center;
-    font-size: 25px;
-    color: #f1f1f1;
+
+.btnEntrar {
+  width: 20rem;
+  height: 3.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  margin-top: 7.5rem;
+  border: 4px solid #ffd86d;
+  color: #ffd86d;
+}
+
+.btnEntrar:hover {
+  background-color: #242629;
+  color: #ffd86d;
+  border: 2px solid #ffd86d;
+}
+
+.btnCadastrar {
+  width: 35rem;
+  height: 3.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  background-color: transparent;
+  color: #f1f1f1;
+  border: 4px solid #f1f1f1;
+}
+
+.btnCadastrar:hover {
+  background-color: #ffd86d;
+  color: #242629;
+  border: 2px solid #242629;
+}
+
+span {
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 25px;
+  color: #f1f1f1;
 }
