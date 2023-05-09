@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #ffd86d;
+  --secondary-color: #242629;
+  --tertiary-color: #f1f1f1;
+
+
+}
+
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: var(--secondary-color) ;
+  color: var(--tertiary-color);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  display: grid;
+  grid-template-columns: 20% 80% ;
+
+}
+
+header {
+  background-color: aqua;
+}
+
+.side-menu {
+  background-color: rgb(135, 172, 204);
+}
+
+.main-content {
+  background-color: rgb(27, 114, 114);
+}
+
+
