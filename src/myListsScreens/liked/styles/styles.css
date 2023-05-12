@@ -226,7 +226,7 @@ main {
       rgba(36, 38, 41, 0.9) 85%,
       rgba(153, 126, 51, 0.6) 99%
     ),
-    url("../../public/images/series-624x454.jpg");
+    url("../../../public/images/series-624x454.jpg");
   grid-area: content;
 
   height: 100%;
@@ -241,8 +241,39 @@ main .visual img {
   height: 20vh;
 }
 
+/* Conteúdo da página Logged */
+
 main .main-content {
-  margin-top: 10vh;
-  background-color: antiquewhite;
+  /* margin-top: 5vh; */
+  /* background-color: rgb(90, 80, 67); */
   color: #363636;
+}
+
+main .main-content .title-wrapper {
+  color: var(--primary-color);
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 10vh;
+  /* background-color: var(--secondary-color); */
+  width: 100%;
+  /* border-bottom: solid 1px #ffd86d; */
+}
+
+main .main-content .title-wrapper :first-child {
+  font-size: 4rem;
+  font-weight: bolder;
+  /* background-color: #af9393; */
+  
+
+}
+
+main .main-content .title-wrapper :last-child {
+  font-size: 3.5rem;
+  /* background-color: #363636; */
+ padding-top: 1rem;
+ border-bottom: solid 1px #ffd86d;
+
+
 }
