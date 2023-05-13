@@ -232,8 +232,9 @@ main {
       rgba(36, 38, 41, 0.90) 85%,
       rgba(153, 126, 51, 0.60) 99%
     ),
-    url("../../../public/images/series-624x454.jpg");
+    url("../../../public/images/fundoAdmin.jpg");
   grid-area: content;
+  background-size: 600px;
   /* display: grid; */
   /* grid-template-areas:
     "visual"

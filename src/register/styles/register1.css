@@ -13,7 +13,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(36, 38, 41, 0.85)  55%, #ceb46b 90%), url("../../public/images/series-624x454.jpg");
+ 
+  background-image: linear-gradient(to bottom, rgba(36, 38, 41, 0.90)  85%, rgb(206, 180, 107, 0.8) 105%), url("../../public/images/series-624x454.jpg");
   padding: 0;
   margin: 0;
 }

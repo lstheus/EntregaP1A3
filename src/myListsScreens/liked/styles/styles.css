@@ -316,10 +316,10 @@ main .main-content .card-slider-wrapper .card-slide:hover {
   transition: all 0.3s;
   border-radius: 0px;
   background-color: black;
-  border: solid 1px var(--tertiary-color);
+  border: solid 3px var(--tertiary-color);
 
-  height: 405px;
-  width: 255px;
+  height: 415px;
+  width: 265px;
 }
 
 main .main-content .card-slider-wrapper .card-slide img {
@@ -360,7 +360,9 @@ main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth
 main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(3),
 main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(4) {
   color: yellow;
+
 }
+
 
 main .main-content .card-slider-wrapper .card-slide .eps-temps {
   color: var(--tertiary-color);
