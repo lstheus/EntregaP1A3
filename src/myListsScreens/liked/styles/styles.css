@@ -9,13 +9,16 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 5vh 95vh;
+  grid-template-rows: 7vh 95vh;
   grid-template-areas:
     "side head"
     "side content";
@@ -24,26 +27,38 @@ body {
 /* Estilização do header */
 
 header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   grid-area: head;
+}
+
+.navbar {
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: 3px 3px 3px #242629;
+
 }
 
 header ul {
   display: flex;
   justify-content: space-around;
-
-  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 header ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-left: 15px;
   width: 10rem;
   font-weight: 700;
   font-size: 1.1rem;
+
+
 }
 
 header ul li a {
@@ -55,16 +70,17 @@ header ul li a {
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  color: var(--secondary-color);
-  border-bottom: solid 5px var(--secondary-color);
+  color: var(--primary-color);
+
+  margin-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 header ul li a:hover {
-  transition: all 0.3s;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-
-  border-bottom: solid 5px var(--tertiary-color);
+  transition: all 0.2s;
+  color: var(--tertiary-color);
+  border-bottom: solid 3px var(--tertiary-color);
 }
 
 /*------------------------- */
@@ -84,6 +100,7 @@ header ul li a:hover {
   color: var(--tertiary-color);
   justify-content: center;
 }
+
 .side-menu .user-bar .user-wrapper {
   display: flex;
   align-items: center;
@@ -109,6 +126,7 @@ header ul li a:hover {
   transition: all 0.3s;
   background-color: var(--primary-color);
 }
+
 .side-menu .user-bar .user-wrapper .nickname {
   height: 40px;
   font-weight: 700;
@@ -180,6 +198,7 @@ header ul li a:hover {
 .material-symbols-outlined {
   font-size: 2.5rem;
 }
+
 .side-bar-items .side-bar-items-title {
   font-size: 2rem;
   text-align: center;
@@ -197,12 +216,15 @@ hr {
 #liked {
   color: lightgreen;
 }
+
 #watched {
   color: rgb(0, 157, 255);
 }
+
 #wish {
   color: yellow;
 }
+
 #disliked {
   color: red;
 }
@@ -211,6 +233,7 @@ hr {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
 #checked #liked,
 #checked #watched,
 #checked #wish,
@@ -221,11 +244,9 @@ hr {
 /* ------------------- */
 
 main {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(36, 38, 41, 0.9) 85%,
-      rgba(153, 126, 51, 0.6) 99%
-    ),
+      rgba(153, 126, 51, 0.6) 99%),
     url("../../../public/images/series-624x454.jpg");
   grid-area: content;
 
@@ -324,54 +345,20 @@ main .main-content .card-slider-wrapper .card-slide .info-series {
   align-items: center;
 }
 
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .year-interval {
+main .main-content .card-slider-wrapper .card-slide .info-series .year-interval {
   font-size: 0.7rem;
   font-weight: 700;
 }
 
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  span {
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao span {
   font-size: 0.8rem;
   color: white;
 }
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  :first-child,
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  :nth-child(2),
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  :nth-child(3),
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  :nth-child(4) {
+
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :first-child,
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(2),
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(3),
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(4) {
   color: yellow;
 }
 
@@ -383,6 +370,7 @@ main .main-content .card-slider-wrapper .card-slide .eps-temps {
   padding: 0 0.5rem;
   font-size: 0.7rem;
 }
+
 main .main-content .card-slider-wrapper .card-slide .eps-temps span {
   background-color: var(--secondary-color);
   padding: 0.3rem;
