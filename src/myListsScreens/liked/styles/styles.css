@@ -18,7 +18,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 7vh 95vh;
+  grid-template-rows: 5vh 95vh;
   grid-template-areas:
     "side head"
     "side content";
@@ -33,13 +33,14 @@ header {
 }
 
 .navbar {
+  display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  box-shadow: 3px 3px 3px #242629;
-
+  box-shadow: 2px 2px 2px rgb(255, 216, 109, 0.2);
+  /* background-color: rgb(75, 85, 82); */
 }
 
 header ul {
@@ -57,8 +58,6 @@ header ul li {
   width: 10rem;
   font-weight: 700;
   font-size: 1.1rem;
-
-
 }
 
 header ul li a {
@@ -74,7 +73,6 @@ header ul li a {
 
   margin-top: 5px;
   padding-bottom: 5px;
-
 }
 
 header ul li a:hover {
@@ -244,9 +242,11 @@ hr {
 /* ------------------- */
 
 main {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(36, 38, 41, 0.9) 85%,
-      rgba(153, 126, 51, 0.6) 99%),
+      rgba(153, 126, 51, 0.6) 99%
+    ),
     url("../../../public/images/series-624x454.jpg");
   grid-area: content;
 
@@ -296,10 +296,12 @@ main .main-content .title-wrapper :last-child {
   border-bottom: solid 1px #ffd86d;
 }
 
-main .main-content .card-slider-wrapper {
-  display: flex;
-  gap: 15px;
-}
+/* Estilização do componente do card slider */
+
+/* main .main-content .card-slider-wrapper {
+  display: flex; 
+   gap: 15px;
+} */
 
 main .main-content .card-slider-wrapper .card-slide {
   background-color: var(--shadow);
@@ -325,6 +327,7 @@ main .main-content .card-slider-wrapper .card-slide:hover {
 main .main-content .card-slider-wrapper .card-slide img {
   height: 17rem;
   width: 13.5rem;
+  pointer-events: none;
 }
 
 main .main-content .card-slider-wrapper .card-slide .img-title {
@@ -345,24 +348,30 @@ main .main-content .card-slider-wrapper .card-slide .info-series {
   align-items: center;
 }
 
-main .main-content .card-slider-wrapper .card-slide .info-series .year-interval {
+main
+  .main-content
+  .card-slider-wrapper
+  .card-slide
+  .info-series
+  .year-interval {
   font-size: 0.7rem;
   font-weight: 700;
 }
 
-main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao span {
+main
+  .main-content
+  .card-slider-wrapper
+  .card-slide
+  .info-series
+  .avaliacao
+  span {
   font-size: 0.8rem;
   color: white;
 }
 
-main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :first-child,
-main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(2),
-main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(3),
-main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao :nth-child(4) {
+#star-checked {
   color: yellow;
-
 }
-
 
 main .main-content .card-slider-wrapper .card-slide .eps-temps {
   color: var(--tertiary-color);
@@ -396,3 +405,36 @@ main .main-content .card-slider-wrapper .card-slide .series-icons span:hover {
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+/* Estilização e configuração do carrossél */
+
+main .main-content .card-slider-wrapper {
+  background-color: #b12b2b;
+  position: absolute;
+
+  overflow: hidden;
+  width: 80%;
+  height: 30rem;
+}
+
+main .main-content .card-slider-wrapper .slide-content {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: antiquewhite;
+  gap: 24px;
+
+  transition: 0s ease-in;
+}
+
+/* main .main-content .card-slider-wrapper .slide-content .card-slide {
+  
+} */
+
+
+/* card-slide */
+
+/* ------------- */
