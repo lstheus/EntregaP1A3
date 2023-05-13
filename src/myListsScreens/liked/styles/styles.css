@@ -18,7 +18,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 5vh 95vh;
+  grid-template-rows: 7vh 93vh;
   grid-template-areas:
     "side head"
     "side content";
@@ -56,7 +56,7 @@ header ul li {
   margin-left: 15px;
   width: 10rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 header ul li a {
@@ -68,8 +68,7 @@ header ul li a {
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  color: var(--tertiary-color);
-  border-bottom: solid 3px var(--tertiary-color);
+  color: var(--primary-color);
 
   margin-top: 5px;
   padding-bottom: 5px;
@@ -77,17 +76,28 @@ header ul li a {
 
 header ul li a:hover {
   transition: all 0.2s;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   border-bottom: solid 3px var(--tertiary-color);
-  background-color: #ffd86d;
 }
 
 /*------------------------- */
 
 /* Estilização do side menu */
 .side-menu {
-  border-right: solid 2px var(--primary-color);
+  height: 100%;
+  box-shadow: 0px 20px 35px var(--shadow);
   grid-area: side;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 90px;
+  box-sizing: border-box;
+}
+
+.side-menu:hover {
+  width: 270px;
+  transition: all 0.5s ease;
 }
 
 .side-menu .user-bar {
@@ -97,7 +107,7 @@ header ul li a:hover {
   display: flex;
 
   color: var(--tertiary-color);
-  justify-content: center;
+  justify-content: left;
 }
 
 .side-menu .user-bar .user-wrapper {
@@ -114,15 +124,14 @@ header ul li a:hover {
   color: var(--tertiary-color);
   display: inline-block;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .side-menu .user-bar .user-wrapper .circle-user:hover {
-  transition: all 0.3s;
   background-color: var(--primary-color);
 }
 
@@ -139,7 +148,6 @@ header ul li a:hover {
 }
 
 .side-menu .user-bar .settings:hover {
-  transition: all 0.3s;
   font-size: 1.5rem;
   color: var(--primary-color);
 }
@@ -151,7 +159,6 @@ header ul li a:hover {
 }
 
 .side-menu .user-bar .circle-user img:hover {
-  transition: all 0.3s;
   opacity: 0.8;
 }
 
@@ -160,10 +167,10 @@ header ul li a:hover {
 /* Estilização side menu listas */
 
 .side-bar-items {
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-
+  transition: width 0.2s linear;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -176,17 +183,14 @@ header ul li a:hover {
   height: 10vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
+  align-items: start;
+  justify-content: left;
   cursor: pointer;
+  position: relative;
+  margin-left: 20px;
 }
 
 .side-bar-items .side-bar-item:hover {
-  transition: all 0.3s;
-  background-color: var(--shadow);
 }
 
 .side-bar-items .side-bar-item .item-text {
@@ -196,6 +200,10 @@ header ul li a:hover {
 .side-bar-items .side-bar-item .material-icons,
 .material-symbols-outlined {
   font-size: 2.5rem;
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+
 }
 
 .side-bar-items .side-bar-items-title {
@@ -243,11 +251,9 @@ hr {
 /* ------------------- */
 
 main {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(36, 38, 41, 0.9) 85%,
-      rgba(153, 126, 51, 0.6) 99%
-    ),
+      rgba(153, 126, 51, 0.6) 99%),
     url("../../../public/images/series-624x454.jpg");
   grid-area: content;
 
@@ -342,23 +348,12 @@ main .main-content .card-slider-wrapper .card-slide .info-series {
   align-items: center;
 }
 
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .year-interval {
+main .main-content .card-slider-wrapper .card-slide .info-series .year-interval {
   font-size: 0.7rem;
   font-weight: 700;
 }
 
-main
-  .main-content
-  .card-slider-wrapper
-  .card-slide
-  .info-series
-  .avaliacao
-  span {
+main .main-content .card-slider-wrapper .card-slide .info-series .avaliacao span {
   font-size: 0.8rem;
   color: white;
 }

@@ -5,21 +5,29 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   image-rendering: "https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg";
-  display: flex;
+  display: block;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 .ContainerEsquerdo {
   background: rgb(36, 38, 41);
   width: 35%;
-  margin-top: none;
+  height: 100%;
 }
+
 img {
   align-items: center;
   display: grid;
@@ -36,14 +44,16 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .ilustracao span {
-  margin-top: 15%;
+  margin-top: 5%;
 
   color: #f1f1f1;
 
   font-size: 10rem;
   font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 200, "opsz" 48;
 }
+
 .mensagem {
   margin-top: 5%;
   display: grid;
@@ -53,6 +63,7 @@ img {
   text-align: center;
   font-size: 1.3rem;
 }
+
 .divisao {
   margin-top: 5%;
   width: 85%;
@@ -62,17 +73,14 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.ContainerDireito {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(153, 126, 51, 0.75),
-      rgba(36, 38, 41) 90%
-    ),
-    url("../public/images/series-624x454.jpg");
 
-  display: flex;
+.ContainerDireito {
+  background-image: linear-gradient(to bottom,
+      rgba(153, 126, 51, 0.75),
+      rgba(36, 38, 41) 90%),
+    url("../public/images/series-624x454.jpg");
   width: 65%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
 }
 
@@ -123,6 +131,11 @@ button:hover {
   margin-top: 7.5rem;
   border: 4px solid #ffd86d;
   color: #ffd86d;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .btnEntrar:hover {
@@ -140,6 +153,11 @@ button:hover {
   background-color: transparent;
   color: #f1f1f1;
   border: 4px solid #f1f1f1;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .btnCadastrar:hover {
@@ -148,6 +166,10 @@ button:hover {
   border: 4px solid #242629;
 }
 
+
+
+
+
 span {
   margin-bottom: 2%;
   margin-left: auto;
@@ -155,4 +177,37 @@ span {
   text-align: center;
   font-size: 25px;
   color: #f1f1f1;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ContainerDireito {
+    width: 100%;
+    height: 55%;
+  }
+
+  .ContainerEsquerdo {
+    width: 100%;
+    height: 45%;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .mensagem{
+      width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .ContainerDireito .wrapper-buttons {
+    width: 20px;
+    height: 20px;
+  }
 }
