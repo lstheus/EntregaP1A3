@@ -193,7 +193,7 @@ span {
   .logo{
     
     width: 100%;
-    height: 100%;
+    
   }
   img{
    
@@ -278,7 +278,7 @@ span {
   }
   .btnCadastrar{
     margin-bottom: 7.7vh;
-    font-size: clamp(1em,5vw + 2vh, 2.5em);
+    font-size: clamp(0.5em,4vw + 2vh, 2.5em);
     padding-top:10px;
     padding-bottom: 10px;
     
