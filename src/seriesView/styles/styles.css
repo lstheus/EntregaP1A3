@@ -28,8 +28,15 @@ body {
 
 header {
   background-color: var(--secondary-color);
+  /* background-color: #ffd15c; */
   color: var(--primary-color);
   grid-area: head;
+  position: fixed;
+  /* overflow: hidden; */
+  top: 0;
+  width: 83.5%;
+  height: 5vh;
+  left:16.5vw
 }
 
 header .header-mobile {
@@ -100,6 +107,9 @@ header nav div a:hover {
 .side-menu {
   border-right: solid 2px var(--primary-color);
   grid-area: side;
+  position: fixed;
+  width: 16.66%;
+  height: 100%;
 }
 
 .side-menu .user-bar {
@@ -259,8 +269,8 @@ main {
     rgba(36, 38, 41, 0.90) 85%,
     rgba(153, 126, 51, 0.60) 99%
   ),
-  url("../../../public/images/fundoAdmin.jpg");
-  background-size: 600px;
+  url("../../public/images/series-624x454.jpg");
+ 
   grid-area: content;
 
   height: 100%;
