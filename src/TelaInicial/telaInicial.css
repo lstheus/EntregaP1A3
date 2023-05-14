@@ -5,29 +5,25 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
-
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
   image-rendering: "https://img.freepik.com/fotos-premium/gradiente-de-tom-pastel-rosa-azul-roxo-desfocado-foto-abstrata-linhas-suaves-pantone-cor-de-fundo_49683-4059.jpg";
-  display: block;
+  display: flex;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
+
 }
 
 .ContainerEsquerdo {
   background: rgb(36, 38, 41);
   width: 35%;
-  height: 100%;
+  margin-top: none;
+  height: 100vh;
 }
-
 img {
   align-items: center;
   display: grid;
@@ -35,25 +31,21 @@ img {
   height: 30vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 1%;
 }
-
 .ilustracao {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .ilustracao span {
-  margin-top: 5%;
+  margin-top: 15%;
 
   color: #f1f1f1;
 
   font-size: 10rem;
   font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 200, "opsz" 48;
 }
-
 .mensagem {
   margin-top: 5%;
   display: grid;
@@ -63,24 +55,25 @@ img {
   text-align: center;
   font-size: 1.3rem;
 }
-
 .divisao {
   margin-top: 5%;
   width: 85%;
-
   border: 1px solid #f1f1f1;
   opacity: 0.1;
   margin-left: auto;
   margin-right: auto;
 }
-
 .ContainerDireito {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(153, 126, 51, 0.75),
-      rgba(36, 38, 41) 90%),
+      rgba(36, 38, 41) 90%
+    ),
     url("../public/images/series-624x454.jpg");
+
+  display: flex;
   width: 65%;
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -90,9 +83,10 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
-  gap: 6vh;
-}
 
+  gap: 6vh;
+  width: 100%;
+}
 .wrapper-buttons span {
   font-size: 2.5rem;
   color: #ffd86d;
@@ -101,6 +95,7 @@ img {
 
 button {
   cursor: pointer;
+  align-items: center;
   text-align: center;
   font-size: 2.5rem;
   justify-content: space-around;
@@ -110,20 +105,18 @@ button {
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
-
   align-items: center;
   justify-content: center;
   background: transparent;
   border-radius: 1rem;
   border-color: transparent;
+  
 }
-
 button:hover {
   transition: all 0.3s;
 }
-
 .btnEntrar {
-  width: 20rem;
+  width:45%;
   height: 3.8rem;
   margin-left: auto;
   margin-right: auto;
@@ -131,11 +124,7 @@ button:hover {
   margin-top: 7.5rem;
   border: 4px solid #ffd86d;
   color: #ffd86d;
-  text-decoration: none;
-  font-size: 25px;
-  border-radius: 15px;
-  text-align: center;
-  padding-top: 15px;
+  max-width: 20rem;
 }
 
 .btnEntrar:hover {
@@ -143,9 +132,8 @@ button:hover {
   color: #ffd86d;
   border: 2px solid #ffd86d;
 }
-
 .btnCadastrar {
-  width: 35rem;
+  width: 65%;
   height: 3.8rem;
   margin-left: auto;
   margin-right: auto;
@@ -153,11 +141,12 @@ button:hover {
   background-color: transparent;
   color: #f1f1f1;
   border: 4px solid #f1f1f1;
-  text-decoration: none;
-  font-size: 25px;
-  border-radius: 15px;
-  text-align: center;
-  padding-top: 15px;
+  max-width: 35rem;
+
+}
+.btnCadastrar a{
+  max-width: 35rem;
+  width: 20%;
 }
 
 .btnCadastrar:hover {
@@ -165,10 +154,6 @@ button:hover {
   color: #242629;
   border: 4px solid #242629;
 }
-
-
-
-
 
 span {
   margin-bottom: 2%;
@@ -178,36 +163,135 @@ span {
   font-size: 25px;
   color: #f1f1f1;
 }
+@media (max-width:800px){
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+ 
 
-@media screen and (max-width: 400px) {
-  .container {
-    display: block;
+  
+  }
+  .ContainerEsquerdo{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-around;
+  }
+  .logo{
+    
     width: 100%;
     height: 100%;
   }
-
-  .ContainerDireito {
-    width: 100%;
-    height: 55%;
+  img{
+   
+    width: 142px;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    height: auto;
+    margin-bottom: 1%;
+    
+    /* background-color: #701158; */
+    
   }
-
-  .ContainerEsquerdo {
-    width: 100%;
-    height: 45%;
-  }
-
-  .logo img {
-    width: 100px;
-    height: 100px;
-  }
+ 
   .mensagem{
-      width: 20px;
-    height: 20px;
-    font-size: 10px;
+    display: grid;
+    
+    font-size: clamp(0.5em,1.7vw + 1vh, 1.1em);
+    margin-top: 2%;
+    /* background-color: #d300b7; */
+    width: 100%;
+    height: auto;
+  }
+  .ilustracao{
+   width: 30%;
+   
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+   
+    height: auto;
+    align-items: center;
+  
+  }
+  .ilustracao span {
+
+    /* background-color: #07c951; */
+    color: #f1f1f1;
+    margin: 5% auto 10%  auto;
+    font-size: 100px;
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 200, "opsz" 48;
+  }
+  .divisao {
+    
+    margin-top: 2%;
+    
+    width: 85%;
+    border: 1px solid #f1f1f1;
+    opacity: 0.1;
+    
+    /* background-color: #f700ff; */
+  }
+  .ContainerDireito{
+    align-items: center;
+    background-color: #ffd86d;
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 50%;
+  }
+  .wrapper-buttons{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    
   }
 
-  .ContainerDireito .wrapper-buttons {
-    width: 20px;
-    height: 20px;
+  .btnEntrar{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    height: 3.8rem;
+    font-size: clamp(1em,5vw + 2vh, 2.5em);
+    padding-top:10px;
+    padding-bottom: 10px;
   }
+  .btnCadastrar{
+    margin-bottom: 7.7vh;
+    font-size: clamp(1em,5vw + 2vh, 2.5em);
+    padding-top:10px;
+    padding-bottom: 10px;
+    
+  }
+  .wrapper-buttons span {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: clamp(1em,5vw + 2vh, 2.5em);
+    width: 100%;
+    height: 100%;
+   
+    color: #ffd86d;
+    font-weight: 700;
+  }
+
 }
