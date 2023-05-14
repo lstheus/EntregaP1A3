@@ -44,25 +44,46 @@
 
 
   <header>
+    <div class="header-mobile">
+      <div class="user-bar">
+        <div class="user-wrapper">
+
+          <div class="circle-user">
+
+            <img src="../../public/images/user.png" alt="">
+
+          </div>
+
+          <span class="nickname">Apelido</span>
+
+        </div>
+      </div>
+      <button class="hamburger ">
+        <div class="bar">
+
+        </div>
+      </button>
+    </div>
     <div class="navbar">
-      <ul>
-        <li> <a href="">
+      <nav>
+        <div>
+          <a href="">
 
             <span class="material-icons">
               person
             </span> Minhas listas
           </a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="">
             <span class="material-icons">
               ondemand_video
             </span>Mais séries
-        </li>
+          </a>
+        </div>
 
-        </a>
 
-        <li>
+        <div>
 
           <a href="">
             <span class="material-icons">
@@ -70,13 +91,41 @@
 
             </span>Sair
           </a>
-        </li>
-      </ul>
+        </div>
+      </nav>
 
     </div>
 
 
   </header>
+  <div class="mobile-side">
+    <nav>
+      <a href="">
+        <span class="material-icons">
+          person
+        </span> Minhas listas
+      </a>
+      <a href="">
+        <span class="material-icons">
+          ondemand_video
+        </span>Mais séries
+      </a>
+      <a href="">
+        <span class="material-icons">
+          face
+        </span>Visualizar perfil
+      </a>
+      <a href="">
+        <span class="material-icons">
+          logout
+        </span>Sair
+      </a>
+    </nav>
+    
+    
+    <hr>
+    <img src="../../public/images/logo-variations/logo-light-second.png" alt="Logomarca Projeto SóSéries">
+  </div>
 
   <div class="side-menu">
 
@@ -107,20 +156,20 @@
         </span>
 
       </div>
-      <div class="side-bar-item"><span class="item-text">Já assistidas</span>
+      <div class="side-bar-item"><span class="item-text">Já vistas</span>
 
         <span class="material-symbols-outlined" id="watched">
           done_all
         </span>
       </div>
-      <div class="side-bar-item "><span class="item-text">Desejo assistir</span>
+      <div class="side-bar-item "><span class="item-text">Desejo ver</span>
         <span class="material-symbols-outlined" id="wish">
           hotel_class
         </span>
 
 
       </div>
-      <div class="side-bar-item "  id="checked"><span class="item-text">Piores séries</span>
+      <div class="side-bar-item "  id="checked"><span class="item-text">Piores </span>
 
         <span class="material-symbols-outlined" id="disliked">
           sentiment_very_dissatisfied
@@ -145,7 +194,7 @@
         <span class="material-symbols-outlined">
           navigate_next
         </span>
-        <h1>As piores séries</h1>
+        <h1>Piores séries</h1>
       </div>
 
 
@@ -965,7 +1014,40 @@
 
     </section>
   </main>
+  <div class="navigation-mobile">
 
+    <ul>
+
+      <li class="side-bar-item " ><span class="item-text">Favoritas</span>
+
+        <span class="material-symbols-outlined" id="liked">
+          sentiment_very_satisfied
+        </span>
+
+      </li>
+      <li class="side-bar-item"><span class="item-text">Já vistas</span>
+
+        <span class="material-symbols-outlined" id="watched">
+          done_all
+        </span>
+      </li>
+      <li class="side-bar-item "><span class="item-text">Desejo ver</span>
+        <span class="material-symbols-outlined" id="wish">
+          hotel_class
+        </span>
+
+
+      </li>
+      <li class="side-bar-item " id="checked"><span class="item-text">Piores </span>
+
+        <span class="material-symbols-outlined" id="disliked">
+          sentiment_very_dissatisfied
+        </span>
+      </li>
+
+
+    </ul>
+  </div>
 
 
 </body>
@@ -973,5 +1055,6 @@
 
 <!-- Javascript geral -->
 <script src="../JS/script.js"></script>
+<script src="../JS/mobile.js"></script>
 
 </html>
