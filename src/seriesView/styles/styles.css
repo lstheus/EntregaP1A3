@@ -7,7 +7,14 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(36, 38, 41, 0.9) 85%,
+      rgba(153, 126, 51, 0.6) 99%
+    ),
+    url("../../public/images/series-624x454.jpg");
+  background-attachment: fixed;
   color: var(--tertiary-color);
   -webkit-user-select: none;
   /* Safari */
@@ -24,11 +31,30 @@ body {
     "side content";
 }
 
+/* Estilização scroll */
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  -webkit-border-radius: 1ex;
+  /* -webkit-box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.75); */
+  border: solid 1px rgb(255, 216, 109);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--tertiary-color);
+}
+
 /* Estilização do header */
 
 header {
   background-color: var(--secondary-color);
-  /* background-color: #ffd15c; */
+  /* background-color: #ffd86d; */
   color: var(--primary-color);
   grid-area: head;
   position: fixed;
@@ -36,7 +62,7 @@ header {
   top: 0;
   width: 83.5%;
   height: 5vh;
-  left:16.5vw
+  left: 16.5vw;
 }
 
 header .header-mobile {
@@ -110,6 +136,7 @@ header nav div a:hover {
   position: fixed;
   width: 16.66%;
   height: 100%;
+  background-color: var(--secondary-color);
 }
 
 .side-menu .user-bar {
@@ -212,8 +239,6 @@ header nav div a:hover {
   background-color: var(--shadow);
 }
 
-
-
 .side-bar-items .side-bar-item .material-icons,
 .material-symbols-outlined {
   font-size: 2.2rem;
@@ -264,16 +289,9 @@ hr {
 /* ------------------- */
 
 main {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(36, 38, 41, 0.90) 85%,
-    rgba(153, 126, 51, 0.60) 99%
-  ),
-  url("../../public/images/series-624x454.jpg");
- 
   grid-area: content;
 
-  height: 100%;
+  height: 100vh;
 }
 
 .navigation-mobile {
@@ -326,9 +344,158 @@ main .main-content .title-wrapper :last-child {
   display: none;
 }
 
+/* Lista de séries cadastradas */
+
+.list-item {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 27rem;
+}
+
+.card-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--shadow);
+  color: var(--primary-color);
+  height: 405px;
+  /* width: 255px; */
+  border-radius: 5px;
+  border: solid 2px var(--primary-color);
+  /* padding: .5rem; */
+  cursor: pointer;
+}
+
+.card-slide:hover {
+  transition: all 0.3s;
+  border-radius: 0px;
+  background-color: black;
+  border: solid 3px var(--tertiary-color);
+
+  height: 425px;
+  /* width: 275px; */
+}
+
+.card-slide img {
+  height: 17rem;
+  width: 13.5rem;
+  user-select: none;
+}
+
+.card-slide .img-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 0.5rem;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-slide .info-series {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-slide .info-series .year-interval {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.card-slide .info-series .avaliacao span {
+  font-size: 0.8rem;
+  color: white;
+}
+
+#star-checked {
+  color: yellow;
+}
+
+.card-slide .eps-temps {
+  color: var(--tertiary-color);
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.card-slide .eps-temps span {
+  background-color: var(--secondary-color);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.card-slide .series-icons {
+  display: flex;
+
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-slide .series-icons span {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.card-slide .series-icons span:hover {
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Grid da lista */
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 5vw; */
+}
+
+/* ------------------ */
+
 /* Responsividade */
 
+@media (max-width: 1650px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1350px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 650px) {
+  .list-item {
+    height: 21rem;
+  }
+
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   body {
     grid-template-columns: none;
     grid-template-rows: 7vh 86vh 7vh;
@@ -342,6 +509,15 @@ main .main-content .title-wrapper :last-child {
     display: none;
   }
   /* Configuração do header mobile */
+  header {
+    position: fixed;
+    /* overflow: hidden; */
+    top: 0;
+    width: 100%;
+    height: 7vh;
+    left: 0vw;
+    z-index: 100;
+  }
 
   header .header-mobile {
     display: flex;
@@ -357,7 +533,7 @@ main .main-content .title-wrapper :last-child {
   /* Estilização e animação do menu hambúrguer */
 
   header .header-mobile .hamburger {
-    z-index: 100;
+    z-index: 9999;
     cursor: pointer;
     position: relative;
     display: block;
@@ -401,7 +577,7 @@ main .main-content .title-wrapper :last-child {
     left: 100%;
     width: 100%;
     height: 100vh;
-    z-index: 98;
+    z-index: 90;
     background-color: var(--secondary-color);
     text-align: center;
     transition: 0.4s;
@@ -543,17 +719,14 @@ main .main-content .title-wrapper :last-child {
 
   /* Estilizaçãp do título */
 
-
   main .main-content .title-wrapper {
     /* background-color: #2b5285; */
 
     height: 5vh;
     width: 75%;
 
-   
     margin-bottom: 8vh;
     margin-top: 2vh;
-    
   }
   main .main-content .title-wrapper :first-child {
     font-size: 2.5rem;
@@ -569,16 +742,110 @@ main .main-content .title-wrapper :last-child {
 
   /* ----- */
 
-  
+  /* Lista de séries cadastradas */
+
+  .card-slide {
+    background-color: var(--shadow);
+    color: var(--primary-color);
+    height: 305px;
+    width: 155px;
+    border-radius: 5px;
+    border: solid 2px var(--primary-color);
+    /* padding: .5rem; */
+    cursor: pointer;
+  }
+
+  .card-slide:hover {
+    transition: all 0.3s;
+    border-radius: 0px;
+    background-color: black;
+    border: solid 3px var(--tertiary-color);
+
+    height: 320px;
+    width: 170px;
+  }
+
+  .card-slide img {
+    height: 12rem;
+    width: 9rem;
+    user-select: none;
+  }
+
+  .card-slide .img-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-slide .info-series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-slide .info-series .year-interval {
+    font-size: 0.5rem;
+    font-weight: 700;
+  }
+
+  .card-slide .info-series .avaliacao span {
+    font-size: 0.5rem;
+    color: white;
+  }
+
+  #star-checked {
+    color: yellow;
+  }
+
+  .card-slide .eps-temps {
+    color: var(--tertiary-color);
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .card-slide .eps-temps span {
+    background-color: var(--secondary-color);
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+
+  .card-slide .series-icons {
+    display: flex;
+
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .card-slide .series-icons span {
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+  }
+
+  .card-slide .series-icons span:hover {
+    transition: all 0.3s;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
 
   /* Navegação inferior */
+
   .navigation-mobile {
     display: block;
     grid-area: navigation;
-
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: var(--shadow);
     border-top: solid 2px var(--primary-color);
+    height: 7vh;
   }
 
   .navigation-mobile ul {
@@ -617,5 +884,19 @@ main .main-content .title-wrapper :last-child {
   .navigation-mobile ul li:hover {
     transition: all 0.3s;
     background-color: var(--shadow);
+  }
+}
+
+@media (max-width: 450px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  /* Grid da lista */
+  .list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
