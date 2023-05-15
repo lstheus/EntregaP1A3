@@ -8,6 +8,8 @@ const uploadPicBtn = document.querySelector('#uploadPicBtn');
 
 
 
+
+
 // Função:
 file.addEventListener('change', function () {
   const choosedFile = this.files[0];

@@ -54,6 +54,8 @@ img {
   color: #ffd86d;
   text-align: center;
   font-size: 1.3rem;
+  padding: 0 1rem;
+  
 }
 .divisao {
   margin-top: 5%;
@@ -163,7 +165,7 @@ span {
   font-size: 25px;
   color: #f1f1f1;
 }
-@media (max-width:800px){
+@media (max-width:950px){
   * {
     margin: 0;
     padding: 0;
