@@ -345,17 +345,23 @@ main .main-content .title-wrapper :last-child {
 
 .serie-selected {
   background-color: var(--secondary-color);
-  width: 80%;
+  width: 55%;
   margin: 0 auto;
   border-radius: 15px;
   border: solid 1px var(--primary-color);
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 1vh;
   align-items: center;
   justify-content: center;
   border-top: none;
   margin-top: 10rem;
+}
+
+.serie-selected hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 1;
 }
 
 .img-streaming {
@@ -364,17 +370,80 @@ main .main-content .title-wrapper :last-child {
   flex-direction: column;
   align-items: center;
   gap: 2vh;
+  width: 100%;
 }
 
 .img-streaming .promo {
-  width: 45vw;
   margin-top: -8rem;
-  border-top: solid 4px #ffd86d;
+  border: solid 2px #ffd86d;
+  border-bottom: none;
+
   border-radius: 5px;
+}
+
+.like-dislike {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin: 2rem 0;
+}
+
+.like-dislike span {
+  cursor: pointer;
+  font-size: 3rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: solid 1px var(--primary-color);
+}
+
+.like-dislike span:hover,
+.like-dislike #disliked:hover,
+.like-dislike #liked:hover {
+  transition: all 0.1s;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: solid 4px var(--primary-color);
+}
+
+.serie-selected button {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 25px;
+  display: flex;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  border: solid 1px var(--tertiary-color);
+  margin: 8rem 0;
+}
+
+.serie-selected button:hover {
+  transition: all 0.3s;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.img-streaming .streaming-icon {
+  width: 7rem;
+  height: 6rem;
+  background-color: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--tertiary-color);
+}
+
+.img-streaming .streaming-icon img {
+  width: 50%;
 }
 .avaliacao {
   background-color: #363636;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
   text-align: center;
   display: flex;
@@ -382,19 +451,108 @@ main .main-content .title-wrapper :last-child {
 .avaliacao span {
   font-size: 2rem;
   color: white;
-
- 
 }
 
 #star-checked {
   color: yellow;
 }
 
+/* Descrição e texto da série */
 
-.streaming-icon {
-  
+.info {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.info .text {
+  margin: 0.5vw;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 0.5vw;
+}
+
+.info h1,
+h2 {
+  color: var(--primary-color);
+  border-radius: 35px;
+  border: solid 1px var(--primary-color);
+  /* padding: 0.4rem 0; */
+  width: 20vw;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  border: solid 1px var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+
+.info .icons {
+  display: flex;
+
+  gap: 2vw;
+}
+
+.info .icons li {
+  background-color: var(--secondary-color);
+  width: 4rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 1px var(--primary-color);
+  border-radius: 5px;
+}
+
+#see a {
+  text-decoration: none;
+}
+
+#see {
+  color: cyan;
+  text-decoration: none;
+}
+
+li:hover #add-serie,
+#see:hover {
+  color: var(--secondary-color);
+}
+
+#add-serie {
+  color: yellowgreen;
+}
+.info .icons li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.info .icons li:hover {
+  transition: all 0.3s;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.text .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: var(--shadow);
+}
+
+.info p {
+  text-align: center;
+  margin: 0.5rem;
+}
 
 .mobile-side {
   display: none;
@@ -651,6 +809,35 @@ main .main-content .title-wrapper :last-child {
 
   /* ----- */
   /* Estilização da série selecionada */
+
+  .serie-selected {
+    width: 90%;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  .info h1,
+  h2 {
+    width: 35vw;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    border: solid 1px var(--tertiary-color);
+    color: var(--tertiary-color);
+  }
+
+  .info .icons li {
+    width: 3rem;
+    height: 2.5rem;
+    font-size: 0.6rem;
+  }
 
   /* ---------- */
 
