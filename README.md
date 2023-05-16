@@ -55,3 +55,11 @@
 
 ### Tela principal do Administrador
 ![image](https://github.com/lstheus/EntregaP1A3/assets/57242457/8c31768b-b7ac-4ed9-b632-1568e0503d65)
+
+## Wireframes
+
+### Tela inicial 
+![image](https://github.com/lstheus/EntregaP1A3/assets/57242457/c7463ca7-9ee5-42b1-bd57-e1b832fa4758)
+
+### Login
+![image](https://github.com/lstheus/EntregaP1A3/assets/57242457/d9f72ea2-9551-47ee-a177-ed94393b5676)
