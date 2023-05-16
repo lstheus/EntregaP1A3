@@ -389,6 +389,166 @@ main .main-content .title-wrapper :last-child {
     display: none;
 }
 
+.info .warning-wrapper .explanation .user-info {
+    width: 100%;
+    height: 30%;
+    border: 1px solid #ffd86d;
+    display: flex;
+}
+
+.info .warning-wrapper .explanation .desktop {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.user-img img {
+    width: 90%;
+    height: auto;
+    max-height: 180px;
+    max-width: 180px;
+}
+
+.info .warning-wrapper .explanation .user-info .user-img {
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin: 1px solid #ffd86d;
+}
+
+.info .warning-wrapper .explanation {
+    width: 100%;
+    height: 100%;
+
+}
+
+.info .warning-wrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.user-info .bloco1 {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 85%;
+    color: #f1f1f1;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info .bloco1 .user-data {
+    margin-top: 20px;
+    width: 75%;
+    font-size: 100%;
+    font-size: clamp(15px, 2vw, 20px)
+}
+
+.info .warning-wrapper .explanation .user-info .user-img {
+    width: 25%;
+    height: 90%;
+    min-width: 180px;
+    min-height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.user-info .user-buttons {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    align-self: flex-end;
+
+}
+
+.user-info {
+    margin: 10px;
+    background-color: #242629;
+    width: 100%;
+}
+
+.refresh-button {
+
+    font-size: 15px;
+    background-color: #363636;
+    gap: 0.5rem;
+    border-radius: 10px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px;
+    color: #f1f1f1;
+}
+
+.refresh-button:hover {
+    transition: all 0.3s;
+    border: solid 1px#f1f1f1;
+    background-color: #242629;
+    color: #f1f1f1;
+}
+
+.delete-button {
+    font-size: 15px;
+    background-color: red;
+    gap: 0.5rem;
+    border-radius: 10px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.delete-button:hover {
+    transition: all 0.3s;
+    border: solid 1px red;
+    background-color: #242629;
+    color: red;
+}
+
+
+
+.edit-button {
+    font-size: 15px;
+    background-color: var(--primary-color);
+    gap: 0.5rem;
+    border-radius: 10px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+
+
+.edit-button:hover {
+    transition: all 0.3s;
+    border: solid 1px var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.mobile{
+    display: none;
+}
+
 /* Responsividade */
 
 @media (max-width: 650px) {
@@ -471,7 +631,39 @@ main .main-content .title-wrapper :last-child {
     }
 
     /* -------- */
-
+    .mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-info .user-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        align-self: flex-end;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    .user-info .user-buttons button{
+        font-size: 12px;
+       
+    }
+    
+    .info .warning-wrapper {
+     
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+        width: 100%;
+        height: 6rem;
+        border-radius: 0px;
+        padding: 0 0.5rem;
+    }
     .mobile-side {
         display: block;
         position: fixed;
@@ -715,102 +907,59 @@ main .main-content .title-wrapper :last-child {
         transition: all 0.3s;
         background-color: var(--shadow);
     }
+    .info{
+        height: 140vh;
+    }
 
 }
-
-.info .warning-wrapper .explanation .user-info {
-    width: 100%;
-    height: 30%;
-    border: 1px solid #ffd86d;
-    display: flex;
-}
-
-.info .warning-wrapper .explanation .desktop {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.info .warning-wrapper .explanation .user-info .user-img {
-    width: 180px;
-    height: 180px;
-    background-color: #ffd86d;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.info .warning-wrapper .explanation {
-    width: 100%;
-    height: 100%;
-
-}
-
-.info .warning-wrapper {
-    width: 100%;
-    height: 100%;
-
-}
-
-.user-info .user-data {
-    text-align: start;
-    width: 30%;
-    color: #f1f1f1;
-    padding: 10px;
-    display: block;
-}
-
-.user-info .user-buttons {
-    width: 60%;
-    display: flex;
-    align-items: self-end;
-    justify-content: center;
-    padding-bottom: 20px;
+@media (max-width: 500px){
     
 
-}
-.user-info{
-    margin: 10px;
-}
+ .user-buttons{
+    flex-direction: row;
+ }
 
-.delete-button {
-    font-size: 15px;
-    background-color: red;
-    gap: 0rem;
-    border-radius: 10px;
-    width: 25%;
-    height: 20%;
+ .user-info .user-buttons {
+    width: 100%;
     display: flex;
-
-    margin-left: 20px;
-}
-
-.delete-button:hover {
-    transition: all 0.3s;
-    border: solid 1px red;
-    background-color: #242629;
-    color: red;
-}
-
-.delete-button .material-symbols-outlined {
-    margin-left: 0.8rem;
-}
-
-.edit-button {
-    font-size: 15px;
-    background-color: var(--primary-color);
-    gap: 0rem;
-    border-radius: 10px;
-    width: 25%;
-    height: 20%;
-    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-items: center;
 }
 
 
-.edit-button:hover {
-    transition: all 0.3s;
-    border: solid 1px var(--primary-color);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+.delete-button, .edit-button, .refresh-button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 20%;
+}
+.user-info .bloco1 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 85%;
+    color: #f1f1f1;
+    padding: 10px;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.material-symbols-outlined{
+    font-size: 25px;
+    width: 10px;
+    
+}
+
+
+
 }
