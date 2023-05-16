@@ -315,6 +315,12 @@ main .main-content .title-wrapper :last-child {
 
 /* Tutorial - Estilização */
 
+.tutorial a {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 .tutorial {
   color: var(--tertiary-color);
   width: 70%;

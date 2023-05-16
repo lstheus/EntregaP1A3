@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="../public/styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
 
-    <title>SóSéries</title>
+    <title>SóSéries - Adm</title>
   </head>
 
   <body class="">
@@ -63,7 +63,7 @@
               <img src="../../public/images/user.png" alt="" />
             </div>
 
-            <span class="nickname">Apelido</span>
+            <span class="nickname">Admin</span>
           </div>
         </div>
         <button class="hamburger">
@@ -74,12 +74,12 @@
         <nav>
           <div>
             <a href="">
-              <span class="material-icons"> person </span> Minhas listas
+              <span class="material-icons"> person </span> Add listas
             </a>
           </div>
           <div>
             <a href="">
-              <span class="material-icons"> ondemand_video </span>Mais séries
+              <span class="material-icons"> ondemand_video </span>Séries
             </a>
           </div>
 
@@ -92,15 +92,11 @@
 
     <div class="mobile-side">
       <nav>
+        <a href=""> <span class="material-icons"> person </span> Add listas </a>
         <a href="">
-          <span class="material-icons"> person </span> Minhas listas
+          <span class="material-icons"> ondemand_video </span>Séries
         </a>
-        <a href="">
-          <span class="material-icons"> ondemand_video </span>Mais séries
-        </a>
-        <a href="">
-          <span class="material-icons"> face </span>Visualizar perfil
-        </a>
+        <a href=""> <span class="material-icons"> face </span>Usuários </a>
         <a href=""> <span class="material-icons"> logout </span>Sair </a>
       </nav>
 
@@ -115,39 +111,34 @@
       <div class="user-bar">
         <div class="user-wrapper">
           <div class="circle-user">
-            <img src="../../public/images/user.png" alt="" />
+            <img src="../../public/images/user.png" alt="Perfil do usário" />
           </div>
 
-          <span class="nickname">Apelido</span>
+          <span class="nickname">Admin</span>
           <span class="material-icons settings"> settings </span>
         </div>
       </div>
 
       <div class="side-bar-items">
-        <span class="side-bar-items-title">Suas listas</span>
+        <span class="side-bar-items-title">Dados</span>
         <hr />
+        <div class="side-bar-item">
+          <span class="item-text">Usuários</span>
+          <span class="material-icons"> group </span>
+        </div>
         <div class="side-bar-item" id="checked">
-          <span class="item-text">Favoritas</span>
+          <span class="item-text">Séries</span>
 
-          <span class="material-symbols-outlined" id="liked">
-            sentiment_very_satisfied
-          </span>
+          <span class="material-icons"> auto_awesome_motion </span>
         </div>
         <div class="side-bar-item">
-          <span class="item-text">Já vistas</span>
-
-          <span class="material-symbols-outlined" id="watched"> done_all </span>
+          <span class="item-text">Cadastrar</span>
+          <span class="material-icons"> app_registration </span>
         </div>
         <div class="side-bar-item">
-          <span class="item-text">Desejo ver</span>
-          <span class="material-symbols-outlined" id="wish"> hotel_class </span>
-        </div>
-        <div class="side-bar-item">
-          <span class="item-text">Piores </span>
+          <span class="item-text">Sair </span>
 
-          <span class="material-symbols-outlined" id="disliked">
-            sentiment_very_dissatisfied
-          </span>
+          <span class="material-icons"> logout </span>
         </div>
         <img
           src="../../public/images/logo-variations/logo-light.png"
@@ -167,62 +158,48 @@
       <section class="main-content">
         <div class="title-wrapper">
           <span class="material-symbols-outlined"> navigate_next </span>
-          <h1>Favoritas</h1>
+          <h1>Cadastro</h1>
         </div>
-        <!-- No caso da lista estar vazia. -->
-        <div class="tutorial">
-          <div class="warning-wrapper">
-            <span class="material-icons"> sentiment_dissatisfied </span>
 
-            <span class="warning">Lista vazia!</span>
+        <div class="info">
+          <div class="warning-wrapper">
+            <span class="material-icons"> ondemand_video </span>
+
+            <span class="warning">Cadastro de séries</span>
           </div>
 
           <div class="explanation">
             <div class="desktop">
               <div class="order">
                 <span
-                  >Acesse o <span id="menu">menu acima</span>
-                  <span class="material-icons"> north </span></span
-                >
-
-                <span>
-                  para ver as séries cadastradas e adicionar itens à sua
-                  lista!</span
+                  >Cadastre séries à
+                  <span id="focus">seção de séries cadastradas</span>
+                  <span class="material-icons"> add_card </span></span
                 >
               </div>
               <hr id="warning-separator" />
               <div class="order">
                 <span
-                  >Acesse o <span id="menu">menu lateral</span>
-                  <span class="material-icons"> west </span></span
+                  >Cadatre ou modifique <span id="focus">usuários</span>
+                  <span class="material-icons"> person_add </span></span
                 >
-
-                <span> para navegar pelas suas listas de séries!</span>
-                <a href="">Outras dúvidas? Clique aqui!</a>
               </div>
             </div>
 
             <div class="mobile">
               <div class="order">
                 <span
-                  >Acesse o <span id="menu">menu acima</span>
-                  <span class="material-icons"> north_east </span></span
-                >
-
-                <span>
-                  para ver as séries cadastradas e adicionar itens à sua
-                  lista!</span
+                  >Cadastre séries à
+                  <span id="focus">seção de séries cadastradas</span>
+                  <span class="material-icons"> add_card </span></span
                 >
               </div>
               <hr id="warning-separator" />
               <div class="order">
                 <span
-                  >Acesse o <span id="menu">menu abaixo</span>
-                  <span class="material-icons"> south </span></span
+                  >Cadatre ou modifique <span id="focus">usuários</span>
+                  <span class="material-icons"> person_add </span></span
                 >
-
-                <span> para navegar pelas suas listas de séries!</span>
-                <a href="">Outras dúvidas? Clique aqui!</a>
               </div>
             </div>
           </div>
@@ -231,33 +208,30 @@
     </main>
     <div class="navigation-mobile">
       <ul>
+        <li class="side-bar-item">
+          <span class="item-text">Usuários</span>
+
+          <span class="material-icons"> group </span>
+        </li>
         <li class="side-bar-item" id="checked">
-          <span class="item-text">Favoritas</span>
+          <span class="item-text">Séries</span>
 
-          <span class="material-symbols-outlined" id="liked">
-            sentiment_very_satisfied
-          </span>
+          <span class="material-icons"> auto_awesome_motion </span>
         </li>
         <li class="side-bar-item">
-          <span class="item-text">Já vistas</span>
-
-          <span class="material-symbols-outlined" id="watched"> done_all </span>
+          <span class="item-text">Cadastrar</span>
+          <span class="material-icons"> app_registration </span>
         </li>
         <li class="side-bar-item">
-          <span class="item-text">Desejo ver</span>
-          <span class="material-symbols-outlined" id="wish"> hotel_class </span>
-        </li>
-        <li class="side-bar-item">
-          <span class="item-text">Piores </span>
+          <span class="item-text">Sair </span>
 
-          <span class="material-symbols-outlined" id="disliked">
-            sentiment_very_dissatisfied
-          </span>
+          <span class="material-icons"> logout </span>
         </li>
       </ul>
     </div>
   </body>
 
   <!-- Javascript geral -->
+  <script src="../../myListsScreens/JS/script.js"></script>
   <script src="../../public/JS/mobile.js"></script>
 </html>

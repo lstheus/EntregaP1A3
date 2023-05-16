@@ -32,7 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vh;
+  /* justify-content: center; */
+  gap: 15vh;
 }
 
 /* Estilização scroll */
@@ -59,8 +60,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .profile {
-  width: 90%;
-  height: 65%;
+  width: 80%;
+  /* height: 83%; */
   background-color: #242629;
   border-radius: 15px;
   -webkit-box-shadow: -4px 14px 82px -21px rgba(0, 36, 38, 1);
@@ -68,6 +69,7 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: -4px 14px 82px -21px rgba(0, 36, 38, 1);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5vh;
 }
 
 #uploadPicBtn {
@@ -139,7 +141,8 @@ button,
   font-size: 1rem;
 }
 
-button:hover {
+button:hover,
+#btn-back:hover {
   transition: all 0.3s;
 }
 
@@ -218,7 +221,7 @@ button:hover {
   background-color: rgb(255, 216, 109, 0.1);
   display: flex;
   border-radius: 15px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -343,15 +346,17 @@ button:hover {
   color: #ebab29;
 }
 
+
+/* Responsividade */
+
 @media (max-width: 980px) {
   /* Grid da lista */
 
   .profile {
-    margin-top: 15vh;
+   
     height: auto;
     display: flex;
     flex-direction: column;
-    
   }
 
   .profile-username {
@@ -363,7 +368,7 @@ button:hover {
     margin-top: 4vh;
     color: #242629;
     padding: 0.5rem;
-    width: 50%;
+    width: 40%;
     border-radius: 35px;
     margin-bottom: -4vh;
   }
@@ -371,6 +376,7 @@ button:hover {
   .profile-username .nickname {
     border: none;
     margin-bottom: 0;
+    font-size: 1.5rem;
   }
 
   .profile-username .material-symbols-outlined {
@@ -380,23 +386,63 @@ button:hover {
   .profile .profile-pic button {
     margin-top: 8vh;
     margin-bottom: -6vh;
-    
   }
 
+  button,
+  #btn-back {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  .profile-info {
+    padding-top: 0;
+  }
+
+  .profile-info .info-boxes {
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 1vh; */
+  }
+  .profile-info .info-boxes .info-box {
+    font-size: 0.6rem;
+    width: 90%;
+  }
+
+  .profile-series .series {
+    font-size: 0.7rem;
+  }
+
+  button .material-icons,
+  button .material-symbols-outlined,
+  #btn-back .material-icons {
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   #logout {
-margin-left: 220px;
-margin-top: -45px;
+    margin-left: 130px;
+    margin-top: -35px;
   }
-  
 
   #change-password {
     margin-top: 0%;
-    margin-right: 220px;
+    margin-right: 130px;
   }
 
   #change-password .material-icons {
     margin-left: 0.7rem;
+  }
+
+  button,
+  #change-password,
+  #logout,
+  #btn-back {
+    width: 5rem;
+    font-size: 0.6rem;
   }
 
   #btn-back .material-icons {
@@ -406,6 +452,5 @@ margin-top: -45px;
   .profile-series {
     gap: 2.5vh;
     padding-bottom: 1vh;
-    
   }
 }
