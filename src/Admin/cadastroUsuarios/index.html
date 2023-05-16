@@ -171,37 +171,56 @@
           </div>
 
           <div class="explanation">
-            <div class="desktop">
+            <div class="">
               <div class="order">
-                <span
-                  >Cadastre séries à
-                  <span id="focus">seção de séries cadastradas</span>
-                  <span class="material-icons"> add_card </span></span
-                >
-              </div>
-              <hr id="warning-separator" />
-              <div class="order">
-                <span
-                  >Cadatre ou modifique <span id="focus">usuários</span>
-                  <span class="material-icons"> person_add </span></span
-                >
-              </div>
-            </div>
+                <div class="profile-pic">
+                  <div class="wrapper-profile">
+                    <img
+                      src="../../public/images/user.png"
+                      alt="Foto do usuário"
+                      id="photo"
+                    />
+                    </div>
+                    <input type="file" id="file" />
+                    <label for="file" id="uploadPicBtn">Mudar foto</label>
+                  </div>
+                <form class="cadastrar_usuario">
 
-            <div class="mobile">
-              <div class="order">
-                <span
-                  >Cadastre séries à
-                  <span id="focus">seção de séries cadastradas</span>
-                  <span class="material-icons"> add_card </span></span
-                >
+                  <div class="input-box">
+                    <label class="apelido_label" for="apelido_input">Apelido</label>
+                    <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+                </div>
+                <div class="input-box">
+                  <label class="email_label" for="email_input">E-mail</label>
+                  <input class="email_input" type="email" placeholder="exemplo@gmail.com" required>
+                </div>
+                <div class="input-box">
+                    <label class="password_label" for="password_input">Senha</label>
+                    <input class="password_input" type="password" placeholder=" * * * * * * * * *" required>
+                </div>
+                <div class="input-box">
+                  <label class="passwordConfirmation_label" for="passwordConfirmation_input">Confirmar Senha</label>
+                  <input class="passwordConfirmation_input" type="password" placeholder=" * * * * * * * * *" required>
               </div>
-              <hr id="warning-separator" />
-              <div class="order">
-                <span
-                  >Cadatre ou modifique <span id="focus">usuários</span>
-                  <span class="material-icons"> person_add </span></span
-                >
+                <div class="form-btn-cadastrar">
+                  <button id="cadastrar">
+                    <span class="material-icons"> person_add  </span>
+                    Cadastrar
+                  </button>
+
+                        </span></button>
+                </div>
+                
+                </form>
+                <div class="form-btn-voltar" action="#">
+                  <button id="voltar">
+                    <span class="material-icons"> arrow_back  </span>
+                    Voltar
+                  </button>
+
+                        </span></button>
+                </div>
+              
               </div>
             </div>
           </div>
