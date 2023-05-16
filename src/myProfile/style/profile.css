@@ -346,14 +346,12 @@ button:hover,
   color: #ebab29;
 }
 
-
 /* Responsividade */
 
 @media (max-width: 980px) {
   /* Grid da lista */
 
   .profile {
-   
     height: auto;
     display: flex;
     flex-direction: column;
