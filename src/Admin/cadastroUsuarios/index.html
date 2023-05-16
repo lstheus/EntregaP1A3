@@ -48,7 +48,8 @@
       crossorigin="anonymous"
     />
     <!-- Estilização -->
-    <link rel="stylesheet" href="../public/styles/reset.css" />
+    <link rel="stylesheet" href="../../public/styles/reset.css" />
+
     <link rel="stylesheet" href="styles/styles.css" />
 
     <title>SóSéries - Adm</title>
@@ -122,7 +123,7 @@
       <div class="side-bar-items">
         <span class="side-bar-items-title">Dados</span>
         <hr />
-        <div class="side-bar-item"  id="checked">
+        <div class="side-bar-item">
           <span class="item-text">Usuários</span>
           <span class="material-icons"> group </span>
         </div>
@@ -131,7 +132,7 @@
 
           <span class="material-icons"> auto_awesome_motion </span>
         </div>
-        <div class="side-bar-item">
+        <div class="side-bar-item" id="checked">
           <span class="item-text">Cadastrar</span>
           <span class="material-icons"> app_registration </span>
         </div>
@@ -163,9 +164,7 @@
 
         <div class="info">
           <div class="warning-wrapper">
-            <span class="material-icons">
-              manage_accounts
-              </span>
+            <span class="material-icons"> manage_accounts </span>
 
             <span class="warning">Cadastro de usuários</span>
           </div>
@@ -187,9 +186,17 @@
                 <form class="cadastrar_usuario">
 
                   <div class="input-box">
-                    <label class="apelido_label" for="apelido_input">Apelido</label>
+                    <label class="apelido_label" for="apelido_input">Primeiro nome</label>
                     <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
                 </div>
+                <div class="input-box">
+                  <label class="apelido_label" for="apelido_input">Último nome</label>
+                  <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+              </div>
+              <div class="input-box">
+                <label class="apelido_label" for="apelido_input">Apelido</label>
+                <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+            </div>
                 <div class="input-box">
                   <label class="email_label" for="email_input">E-mail</label>
                   <input class="email_input" type="email" placeholder="exemplo@gmail.com" required>
@@ -229,17 +236,17 @@
     </main>
     <div class="navigation-mobile">
       <ul>
-        <li class="side-bar-item" id="checked">
+        <li class="side-bar-item">
           <span class="item-text">Usuários</span>
 
           <span class="material-icons"> group </span>
         </li>
-        <li class="side-bar-item" >
+        <li class="side-bar-item">
           <span class="item-text">Séries</span>
 
           <span class="material-icons"> auto_awesome_motion </span>
         </li>
-        <li class="side-bar-item">
+        <li class="side-bar-item" id="checked">
           <span class="item-text">Cadastrar</span>
           <span class="material-icons"> app_registration </span>
         </li>
@@ -253,6 +260,6 @@
   </body>
 
   <!-- Javascript geral -->
-  <script src="../../myListsScreens/JS/script.js"></script>
+  <script src="../../register/JS/app.js"></script>
   <script src="../../public/JS/mobile.js"></script>
 </html>
