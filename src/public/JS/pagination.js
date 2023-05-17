@@ -47,13 +47,5 @@ document.querySelector("#logout").addEventListener("click", () => {
 
 });
 
-//  <button class="btnEntrar" >Entre</button>
-
-
-
-//  <span>Ou</span>
-
-
-// <button class="btnCadastrar">Cadastre-se</button></a>
 
 
