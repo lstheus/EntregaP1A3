@@ -6,7 +6,7 @@
  O trabalho deverá ser feito em equipe com no mínimo 3 e no máximo 5 componentes. Exceções só poderão ser aceitas com justificativa e com aprovação por escrito de um Professor da turma.
   Esse projeto vale 10 pontos. 
   
-  ### OBS: O relatório do projeto está contido na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/src/aa3_relatorio)
+  ### OBS: O relatório do projeto está contido na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio)
 
 
 ## 2. Requisitos
@@ -24,7 +24,7 @@
 - Javascript
 - Figma
 
-## Algumas telas do projeto [Desktop-Mobile] (O resto pode ser visto nos arquivos do repositório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/src/aa3_relatorio))
+## Algumas telas do projeto [Desktop-Mobile] (O resto pode ser visto nos arquivos do repositório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio))
 - **O projeto possui scrollagem personalizada.**
 - **O site disponibiliza várias séries em "Mais séries" ou "Séries cadastradas". Dessa forma, o usuário poderá escolher as séries que quer adicionar às suas listas. Ao selecionar uma série, ele poderá ver mais informações sobre ela e clicar em um link que o redireciona para a série em sua respectiva plataforma de streaming. O site tem como objetivo melhor organização das séries favoritas, piores ou já assistidas na visão do usuário.**
 - **A série selecionada muda de estilo quando o usuário está nela no sistema, além de todos os botoes possuírem hover e estilizações dinâmicas.**
@@ -81,7 +81,7 @@
 ### Tela principal do Administrador
 ![image](https://github.com/lstheus/EntregaP1A3/assets/100351576/7565a98d-0499-4bad-b496-1714c20d2e5c)
 
-## Alguns Wireframes do projeto (O resto pode ser visto nos arquivos do repositório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/src/aa3_relatorio))
+## Alguns Wireframes do projeto (O resto pode ser visto nos arquivos do repositório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio))
 
 ### Tela inicial 
 ![6](https://github.com/lstheus/EntregaP1A3/assets/100351576/cb9a6de1-0208-4736-9c85-2acc15814806)
