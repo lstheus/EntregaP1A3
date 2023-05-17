@@ -35,7 +35,7 @@
 - Javascript
 - Figma
 
-## Algumas telas do projeto [Desktop-Mobile] (O resto pode ser visto nos arquivos do repositório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio))
+## Algumas telas do projeto [Desktop-Mobile] (O resto pode ser visto nos arquivos do repositório das pastas das telas ou no Figma: o link do Figma está no relatório na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio))
 - **O projeto possui scrollagem personalizada.**
 - **O site disponibiliza várias séries em "Mais séries" ou "Séries cadastradas". Dessa forma, o usuário poderá escolher as séries que quer adicionar às suas listas. Ao selecionar uma série, ele poderá ver mais informações sobre ela e clicar em um link que o redireciona para a série em sua respectiva plataforma de streaming. O site tem como objetivo melhor organização das séries favoritas, piores ou já assistidas na visão do usuário.**
 - **A série selecionada muda de estilo quando o usuário está nela no sistema, além de todos os botoes possuírem hover e estilizações dinâmicas.**
