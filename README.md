@@ -1,7 +1,18 @@
 
-#EntregaP1A3 - Projeto SoSeries
---
-## 1. Descrição
+<div align="center">
+
+# 🍿EntregaP1A3 - Projeto SoSeries 🍿
+
+</div>
+
+
+
+
+![Captura de tela de 2023-05-16 23-34-16](https://github.com/lstheus/EntregaP1A3/assets/100351576/639efe97-cb8f-475c-8856-55630e2bb5a7)
+
+
+
+## 1. 📄Descrição📄
  O trabalho consiste em criar uma aplicação WEB para gerenciar a lista de séries de um usuário. 
  O trabalho deverá ser feito em equipe com no mínimo 3 e no máximo 5 componentes. Exceções só poderão ser aceitas com justificativa e com aprovação por escrito de um Professor da turma.
   Esse projeto vale 10 pontos. 
@@ -9,7 +20,7 @@
   ### OBS: O relatório do projeto está contido na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/tree/master/aa3_relatorio)
 
 
-## 2. Requisitos
+## 2. ⚖️Requisitos⚖️
 - A aplicação deverá atender aos seguintes casos de uso:
 - Cadastro do usuário;
 - Login do usuário;
@@ -18,7 +29,7 @@
 - Categorizar a série (assistido, desejo assistir, não recomendo, outros status);
 - Definir e visualizar em qual plataforma de streaming é possível assistir à série.
 
-## Tecnologias utilizadas
+## ✔️Tecnologias utilizadas✔️
 - HTML
 - CSS
 - Javascript
