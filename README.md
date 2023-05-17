@@ -5,7 +5,8 @@
  O trabalho consiste em criar uma aplicação WEB para gerenciar a lista de séries de um usuário. 
  O trabalho deverá ser feito em equipe com no mínimo 3 e no máximo 5 componentes. Exceções só poderão ser aceitas com justificativa e com aprovação por escrito de um Professor da turma.
   Esse projeto vale 10 pontos. 
-  OBS: O relatório do projeto está contido na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/blob/master/src/aa3_relatorio/Relatorio_SoSeries%20(1).docx)
+  
+  ### OBS: O relatório do projeto está contido na pasta [aa3_relatorio](https://github.com/lstheus/EntregaP1A3/blob/master/src/aa3_relatorio/Relatorio_SoSeries%20(1).docx)
 
 
 ## 2. Requisitos
