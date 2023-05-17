@@ -1,8 +1,7 @@
 
 
 
-
-
+// Paginação incompleta, porém iniciada para ser finalizada na etrega 02.
 
 
 document.querySelector("#btn-entrar").addEventListener("click", () => {
